@@ -1,0 +1,107 @@
+1) Посмотреть, где я сейчас - pwd
+
+2) Создать папку - mkdir QA
+
+3) Зайти в папку - cd C:\Users\User\Desktop\QA
+
+4) Создать 3 папки - mkdir T1 T2 T3
+
+5) Зайти в любую папку - cd T1
+
+6) Создать 5 файлов (3 txt, 2 json) -  touch 1.txt 2.txt 3.txt 4.json 5.json
+
+7) Создать 3 папки -  mkdir 1 2 3
+
+8) Вывести список содержимого папки - ls -la
+
+9) + Открыть любой txt файл - vim 1.txt
+
+10) + написать туда что-нибудь, любой текст. - i - активировать режим ввода. 
+Ввод текста, например, 
+" Hi! I'm Tanya."
+
+11) + сохранить и выйти. - esc - :wq
+
+12) Выйти из папки на уровень выше - cd ..
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. -- 
+mv 1.txt 2.txt /c/Users/User/Desktop/QA/T3
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. --
+cp /c/Users/User/Desktop/QA/T1 1.txt 2.txt /c/Users/User/Desktop/QA/T2
+
+15) Найти файл по имени
+find 1.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+grep -A1 "Hi" 1.txt
+ Hi! I'm Tanya.
+
+17) вывести несколько первых строк из текстового файла
+ head -4 2.txt
+
+18) вывести несколько последних строк из текстового файла
+tail -n3 2.txt
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less HW_1.txt
+
+20) вывести дату и время
+date
+Sun Jul 11 13:26:02     2021
+
+date -I
+2021-07-11
+
+date -u
+Sun Jul 11 10:29:22 UTC 2021
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions
+
+ curl  https://api.quarantine.country/api/v1/regions
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:21 --:--:--     0
+curl: (28) Failed to connect to api.quarantine.country port 443: Timed out
+
+
+
+curl -I  https://api.quarantine.country/api/v1/regions
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0HTTP/2 200
+server: nginx
+content-type: application/json
+vary: Accept-Encoding
+cache-control: no-cache, private
+date: Sun, 11 Jul 2021 10:39:42 GMT
+access-control-allow-origin: *
+access-control-allow-methods: POST, GET, OPTIONS, PUT, DELETE
+access-control-allow-credentials: true
+access-control-max-age: 86400
+access-control-allow-headers: Content-Type, Authorization, X-Requested-With
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+
+
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+Создать файл touch script.sh
+vim script.sh -- i -- написать команды: 
+
+#!/bin/bash
+cd /d/тестирование/Homework/HW_1/script
+mkdir S1 S2 S3
+cd S2
+touch 11.txt 22.txt 33.txt 44.json 55.json
+mkdir S11 S22 S33
+ls -la
+mv 22.txt 44.json /d/тестирование/Homework/HW_1//script/S3
+
+затем прописать ./script.sh -- Enter
