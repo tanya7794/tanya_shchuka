@@ -1,0 +1,10 @@
+Структура чек-листа:
+
+ID
+Description
+Environment
+Actual result
+Status
+Comment
+
+
