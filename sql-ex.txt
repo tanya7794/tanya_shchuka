@@ -3,3 +3,10 @@
 select model, speed, hd
 from PC
 where price < 500
+
+2. Hайдите производителей принтеров. Вывести: maker
+
+select distinct maker
+from product
+where type = 'printer'
+
