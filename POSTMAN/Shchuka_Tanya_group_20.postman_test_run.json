@@ -1,0 +1,194 @@
+{
+	"id": "9682dfd7-4dbe-4643-9d46-9beb6d2d01ab",
+	"name": "Shchuka_Tanya_group_20",
+	"timestamp": "2021-09-15T03:01:46.811Z",
+	"collection_id": "14396337-c7b33dcc-ea93-468d-b0b3-1aca3d686bf1",
+	"folder_id": 0,
+	"environment_id": "55cbf5c6-6c01-447c-9118-73829624ba62",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "eb302ec5-b539-47e6-a6d6-6c257d882037",
+			"name": "first",
+			"url": "http://162.55.220.72:5005/first",
+			"time": 249,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				249
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b2519c24-5e70-4c5b-a08b-6019e327a6a1",
+			"name": "1. get_method",
+			"url": "http://162.55.220.72:5005/get_method?name=Tanya&age=26",
+			"time": 179,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				179
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d927f6e0-fabd-40a1-ab32-7170b3d94db2",
+			"name": "2. user_info_3",
+			"url": "http://162.55.220.72:5005/user_info_3",
+			"time": 195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "48037c92-6d1b-4415-8a05-ce7b6529e172",
+			"name": "3. object_info_1",
+			"url": "http://162.55.220.72:5005/object_info_1?name=Tanya&age=26&weight=50",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				167
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "521ccf1b-5cfe-481c-b681-41c9eaf770ec",
+			"name": "4. object_info_2",
+			"url": "http://162.55.220.72:5005/object_info_2?name=Julia&age=40&salary=5400",
+			"time": 278,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				278
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a3b2bde1-ab0d-48b0-838f-72c23e33455f",
+			"name": "5. object_info_3",
+			"url": "http://162.55.220.72:5005/object_info_3?name=Hurry&age=32&salary=650",
+			"time": 292,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				292
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "464d2b1b-2ac3-4c1d-85a0-47439523a262",
+			"name": "6. object_info_4",
+			"url": "http://162.55.220.72:5005/object_info_4?name=Nina&age=55&salary=1200",
+			"time": 277,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				277
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cdc54a5e-8973-4b7c-8d75-943e3f09a519",
+			"name": "7. user_info_2",
+			"url": "http://162.55.220.72:5005/user_info_2",
+			"time": 233,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				233
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1870,
+	"collection": {
+		"requests": [
+			{
+				"id": "eb302ec5-b539-47e6-a6d6-6c257d882037",
+				"method": "GET"
+			},
+			{
+				"id": "b2519c24-5e70-4c5b-a08b-6019e327a6a1",
+				"method": "GET"
+			},
+			{
+				"id": "d927f6e0-fabd-40a1-ab32-7170b3d94db2",
+				"method": "POST"
+			},
+			{
+				"id": "48037c92-6d1b-4415-8a05-ce7b6529e172",
+				"method": "GET"
+			},
+			{
+				"id": "521ccf1b-5cfe-481c-b681-41c9eaf770ec",
+				"method": "GET"
+			},
+			{
+				"id": "a3b2bde1-ab0d-48b0-838f-72c23e33455f",
+				"method": "GET"
+			},
+			{
+				"id": "464d2b1b-2ac3-4c1d-85a0-47439523a262",
+				"method": "GET"
+			},
+			{
+				"id": "cdc54a5e-8973-4b7c-8d75-943e3f09a519",
+				"method": "POST"
+			}
+		]
+	}
+}
